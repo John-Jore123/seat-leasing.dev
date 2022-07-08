@@ -1,0 +1,1 @@
+<li class="font-lead text-xl py-1 sm:!text-base lg:text-lg">{{ $type }}</li>

@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        @apply font-lead;
+    }
+    ::-webkit-scrollbar {
+        @apply w-2.5;
+    }
+    /* Track */
+    ::-webkit-scrollbar-track {
+        @apply shadow-inner rounded;
+    }
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        @apply bg-casal-500 rounded;
+    }
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        @apply bg-firefly-500;
+    }
+}
+
+/// VARIABLES
+$breakpoint: (
+    mobile          : 425px,
+    tablet          : 768px,
+    laptop          : 1024px,
+);
+
+@mixin sectionFlex {
+    @apply flex items-center justify-center;
+}
+@mixin media_breakpoint($breakpoints) {
+    @if map-has-key($breakpoint, $breakpoints) {
+        $value: map-get($breakpoint, $breakpoints);
+        @media screen and (max-width: $value) {
+            @content;
+        }
+    }
+    @warn "Unknown `#{$breakpoints}` in $breakpoint";
+}
+section {
+    @include sectionFlex;
+    @apply relative z-10 bg-no-repeat bg-center bg-cover
+}
+// HOME
+.home_section_obj {
+    @apply bg-first-hero-image w-full h-screen bg-fixed overflow-hidden sm:h-full sm:py-12 md:h-[50vh];
+}
+.home_section_obj::after {
+    content: "";
+    @apply min-w-full h-40 absolute bottom-0;
+    background: rgb(67,200,218);
+    background: linear-gradient(180deg, rgba(67,200,218,0) 30%, rgba(25,166,158,1) 450px);
+}
+.text_line_obj {
+    @apply relative;
+    &::before {
+        content: "";
+        @apply bg-java-300;
+        position: absolute;
+        width: 470px;
+        height: 10px;
+        right: -50%;
+        transform: translate(50%, -50px);
+    }
+    &::after {
+        content: "";
+        @apply bg-java-300;
+        position: absolute;
+        width: 1600px;
+        height: 10px;
+        right: -50%;
+        transform: translate(50%, -20px);
+    }
+    @include media_breakpoint(tablet) {
+        &::before,
+        &::after {
+            display: none !important;
+        }
+    }
+}
+// FEATURE
+.first_polygon_hero_bg {
+    clip-path: polygon(60% 30%, 100% 20%, 100% 100%, 0 100%, 0 0);
+    @include media_breakpoint(tablet) {
+        clip-path: none !important;
+    }
+}
+// #particles-js {
+//     position:absolute !important; width: 100% !important; height: 100% !important; z-index: 999 !important;
+// }
+// SERVICE
+.second_polygon_hero_bg {
+    clip-path: polygon(65% 0%, 100% 10%, 100% 100%, 0 100%, 0 15%);
+    @include media_breakpoint(tablet) {
+        clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0 100%, 0 5%)
+    }
+}
+// CONTACT
+.contact_btn_obj {
+    @apply transition focus:border-firefly focus:bg-firefly hover:border-firefly hover:bg-firefly
+    
+}
+
+.contact_location_obj:hover {
+    .contact_icon_obj {
+        @apply transition border-firefly bg-firefly
+    }
+}
