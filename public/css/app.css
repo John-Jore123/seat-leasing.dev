@@ -806,6 +806,9 @@ html{
 .w-full{
   width: 100%;
 }
+.w-64{
+  width: 16rem;
+}
 .\!w-full{
   width: 100% !important;
 }
@@ -835,9 +838,6 @@ html{
 }
 .w-\[30px\]{
   width: 30px;
-}
-.w-64{
-  width: 16rem;
 }
 .max-w-full{
   max-width: 100%;

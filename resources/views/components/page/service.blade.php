@@ -12,7 +12,7 @@
         </div>
     </div>
     <div class=" h-screen bg-firefly">
-        <figure class="h-[120vh] bg-fourth-hero-image bg-cover bg-no-repeat absolute bottom-0 left-0 right-0 flex items-center justify-center sm:h-[130vh] second_polygon_hero_bg">
+        <figure class="h-[120vh] bg-fourth-hero-image bg-fixed bg-cover bg-no-repeat absolute bottom-0 left-0 right-0 flex items-center justify-center sm:h-[130vh] second_polygon_hero_bg">
             <div class="container flex mx-auto md:block">
                 <div class="w-1/2 text-white mx-10 inline-flex flex-wrap content-center items-center mb-12 md:!w-auto md:!mx-6 lg:ml-12 lg:mr-0" data-aos="fade-right">
                     <p class="mb-5 text-xl inline lg:text-base">

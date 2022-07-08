@@ -22,12 +22,12 @@ class Contact extends Component
                 'image' => url('/images/svg/maps-black.svg'),
             ],
             [
-                'href' => 'https://www.gmail.com/',
+                'href' => 'mailto:johnrey@innocentrixphilippines.com',
                 'description' => 'themcsgroupofcompanies@gmail.com',
                 'image' => url('/images/svg/mail.svg'),
             ],
             [
-                'href' => 'https://globfone.com/call-phone/',
+                'href' => 'tel:639950678993',
                 'description' => '(032) 516 3137',
                 'image' => url('/images/svg/phone-call.svg'),
             ],
