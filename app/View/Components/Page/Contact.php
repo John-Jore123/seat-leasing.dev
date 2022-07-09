@@ -27,7 +27,7 @@ class Contact extends Component
                 'image' => url('/images/svg/mail.svg'),
             ],
             [
-                'href' => 'tel:639950678993',
+                'href' => 'tel:0325163137',
                 'description' => '(032) 516 3137',
                 'image' => url('/images/svg/phone-call.svg'),
             ],

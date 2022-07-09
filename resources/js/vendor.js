@@ -1,3 +1,4 @@
+window.$ = window.jQuery = require('jquery');
 window.AOS = require('aos');
 
 window.addEventListener('load', () => {
@@ -10,5 +11,13 @@ window.addEventListener('load', () => {
     });
 });
 
+var header = $('.header_obj');
+var win = $(window);
 
-
+win.on('scroll', function() {
+    if($(win).scrollTop() <= 40){
+        header.removeClass('active_scroll');
+    } else {
+        header.addClass('active_scroll');
+    }
+});

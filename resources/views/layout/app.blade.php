@@ -22,8 +22,9 @@
         </main>   
 
         <script src="{{ asset('js/app.js') }}"></script>
-        <script src="{{ asset('js/vendor.js') }}"></script>
 
+        <script src="{{ asset('js/jquery.min.js') }}"></script>
+        <script src="{{ asset('js/vendor.js') }}"></script>
         <script src="{{ asset('js/particles.js') }}"></script>
         <script src="{{ asset('js/app-particles.js') }}"></script>
         <script src="{{ asset('js/aos.js') }}"></script>

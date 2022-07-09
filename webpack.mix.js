@@ -24,6 +24,7 @@ mix.js('resources/js/app.js', '/js')
     .js('node_modules/aos/dist/aos.js', '/js')
     .js('node_modules/particles.js/particles.js', '/js')
     .js('resources/js/app-particles.js', '/js')
+    .js('node_modules/jquery/dist/jquery.min.js', '/js')
     .css('node_modules/aos/dist/aos.css', '/css')
     .setPublicPath('public/');
 

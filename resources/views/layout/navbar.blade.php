@@ -1,4 +1,7 @@
-<header class="w-full fixed top-0 left-0 z-50 bg-transparent shadow-none">
+{{-- unscroll -> no backgroind bg-transparent shadow-none --}}
+{{-- scroll -> background white w/ box-shadow -> bg-white/70 shadow-2xl  --}}
+
+<header class="w-full fixed top-0 left-0 z-50 bg-transparent shadow-none transition duration-300 ease-in-out header_obj">
     <div class="container mx-auto">
         <div class="flex items-center justify-between relative">            
             <div class="flex justify-end items-center w-full">

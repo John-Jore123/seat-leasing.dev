@@ -1,7 +1,7 @@
 <section id="#" class="w-full h-auto bg-white !block overflow-hidden">
     <div class="h-[150vh] bg-second-hero-image bg-no-repeat bg-top bg-cover relative sm:!h-[80vh] md:rounded-br-[180px] md:h-screen lg:bg-left">
         <div id="particles-js" class="w-full h-full absolute"></div>
-        <div class="container mx-auto translate-y-40">
+        <div class="container mx-auto translate-y-52">
             <div class="w-4/5 flex flex-wrap justify-center mx-auto md:w-full">
                 <h4 class="text-5xl text-firefly-500 font-semibold inline mb-8 sm:text-3xl md:text-center lg:text-3xl">Find The Space For Your Business As You Build It.</h4>
                 <p class="text-black text-xl inline px-16 sm:text-base sm:!px-4 md:px-12 lg:text-base lg:px-7" data-aos="fade-up" data-aos-duration="2000">

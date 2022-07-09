@@ -48,6 +48,12 @@ section {
     @include sectionFlex;
     @apply relative z-10 bg-no-repeat bg-center bg-cover
 }
+
+// NAVBAR
+.active_scroll {
+    @apply bg-white/70 shadow-2xl
+}
+
 // HOME
 .home_section_obj {
     @apply bg-first-hero-image w-full h-screen bg-fixed overflow-hidden sm:h-full sm:py-12 md:h-[50vh];
@@ -64,16 +70,16 @@ section {
         content: "";
         @apply bg-java-300;
         position: absolute;
-        width: 470px;
+        width: 400px;
         height: 10px;
-        right: -50%;
+        right: -70%;
         transform: translate(50%, -50px);
     }
     &::after {
         content: "";
         @apply bg-java-300;
         position: absolute;
-        width: 1600px;
+        width: 1500px;
         height: 10px;
         right: -50%;
         transform: translate(50%, -20px);
