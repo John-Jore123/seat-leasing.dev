@@ -12,9 +12,10 @@ window.addEventListener('load', () => {
 });
 
 var header = $('.header_obj')
+var win = $(window)
 
 $(window).on('scroll', function() {
-    if($(this).scrollTop() <= 40){
+    if($(win).scrollTop() <= 40){
         header.removeClass('active_scroll')
     } else {
         header.addClass('active_scroll')
