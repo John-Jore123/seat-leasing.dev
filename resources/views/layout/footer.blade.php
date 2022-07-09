@@ -9,3 +9,7 @@
         </div>
     </div>
 </footer>
+
+<a href="#" class="p-3 arrow-up" id="arrow-up">
+    <i class="fa fa-long-arrow-up" aria-hidden="true"></i>
+</a>

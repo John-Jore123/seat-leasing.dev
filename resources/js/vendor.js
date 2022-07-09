@@ -11,13 +11,12 @@ window.addEventListener('load', () => {
     });
 });
 
-var header = $('.header_obj');
-var win = $(window);
+var header = $('.header_obj')
 
-win.on('scroll', function() {
-    if($(win).scrollTop() <= 40){
-        header.removeClass('active_scroll');
+$(window).on('scroll', function() {
+    if($(this).scrollTop() <= 40){
+        header.removeClass('active_scroll')
     } else {
-        header.addClass('active_scroll');
+        header.addClass('active_scroll')
     }
 });
